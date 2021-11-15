@@ -1,0 +1,332 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+
+namespace BALhr
+{
+    public class HRbalclass
+
+    {
+
+    }
+    public class ResumeTracker
+    {
+        int _resumeid;
+        public int ResumeId
+        {
+            get { return _resumeid; }
+            set
+            {
+                if (value <= 0)
+
+                {
+                    throw new ArgumentNullException("Resume id cannot be null or zero");
+                }
+                else
+                {
+                    _resumeid = value;
+                }
+            }
+        }
+
+
+        string _FullName;
+        public string FullName
+        {
+            get { return _FullName; }
+            set
+            {
+                if (value.Length > 0)
+                {
+                    _FullName = value;
+                }
+                else
+                {
+                    throw new ArgumentNullException("Name can't be blank or null");
+                }
+            }
+        }
+
+        [DataType(DataType.Date)]
+        [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
+
+        string _age;
+        public string Age
+        {
+            get { return _age; }
+            set
+            {
+                if (value.Length > 0)
+                {
+                    _age = value;
+                }
+                else
+                {
+                    throw new ArgumentNullException(“Age can't be blank or null");
+                }
+            }
+        }
+
+        string _email;
+        public string Email
+        {
+            get { return _email; }
+            set
+            {
+                if (value.Length > 0)
+                {
+                    _email = value;
+                }
+                else
+                {
+                    throw new ArgumentNullException("Email can't be blank or null");
+                }
+            }
+        }
+
+        int _phoneno;
+        public int PhoneNo
+        {
+            get { return _phoneno; }
+            set
+            {
+                if (value <= 0)
+
+                {
+                    throw new ArgumentNullException("Phone number cannot be null or zero");
+                }
+                else
+                {
+                    _phoneno = value;
+                }
+            }
+        }
+
+        string _gender;
+        public string Gender
+        {
+            get { return _gender; }
+            set
+            {
+                if (value.Length > 0)
+                {
+                    _gender = value;
+                }
+                else
+                {
+                    throw new ArgumentNullException("Gender can't be blank or null");
+                }
+            }
+        }
+
+        string _addr;
+        public string Address
+        {
+            get { return _addr; }
+            set
+            {
+                if (value.Length > 0)
+                {
+                    _addr = value;
+                }
+                else
+                {
+                    throw new ArgumentNullException("Address can't be blank or null");
+                }
+            }
+        }
+
+
+        string _nation;
+        public string Nationality
+        {
+            get { return _nation; }
+            set
+            {
+                if (value.Length > 0)
+                {
+                    _nation = value;
+                }
+                else
+                {
+                    throw new ArgumentNullException("Nationality can't be blank or null");
+                }
+            }
+        }
+
+        string _experience;
+        public string Experience
+        {
+            get { return _experience; }
+            set
+            {
+                if (value.Length >= 0)
+                {
+                    _experience = value;
+                }
+                else
+                {
+                    throw new ArgumentNullException("If no Experience enter 0 ");
+                }
+            }
+        }
+
+        string _interest;
+        public string Interest
+        {
+            get { return _interest; }
+            set
+            {
+                if (value.Length > 0)
+                {
+                    _interest = value;
+                }
+                else
+                {
+                    throw new ArgumentNullException("Interest can't be blank or null");
+                }
+            }
+        }
+
+        string _specialization;
+        public string Specialization
+        {
+            get { return _specialization; }
+            set
+            {
+                if (value.Length > 0)
+                {
+                    _specialization = value;
+                }
+                else
+                {
+                    throw new ArgumentNullException("Specialization can't be blank or null");
+                }
+            }
+        }
+
+        int _10thPercent;
+        public int tenthPercent
+        {
+            get { return _10thPercent; }
+            set
+            {
+                if (value > 0)
+
+                {
+                    throw new ArgumentNullException("10thPercent cannot be null or zero");
+                }
+                else
+                {
+                    _10thPercent = value;
+                }
+            }
+        }
+
+        int _12thPercent;
+        public int TwelvethPercent
+        {
+            get { return _12thPercent; }
+            set
+            {
+                if (value > 0)
+
+                {
+                    throw new ArgumentNullException("12thPercent cannot be null or zero");
+                }
+                else
+                {
+                    _12thPercent = value;
+                }
+            }
+        }
+
+        string _college;
+        public string College
+        {
+            get { return _college; }
+            set
+            {
+                if (value.Length > 0)
+                {
+                    _college = value;
+                }
+                else
+                {
+                    throw new ArgumentNullException("College can't be blank or null");
+                }
+            }
+        }
+
+        string _GraduationCourse;
+        public string GraduationCourse
+        {
+            get { return _GraduationCourse; }
+            set
+            {
+                if (value.Length > 0)
+                {
+                    _GraduationCourse = value;
+                }
+                else
+                {
+                    throw new ArgumentNullException("GraduationCourse can't be blank or null");
+                }
+            }
+        }
+
+
+        string _Branch;
+        public string Branch
+        {
+            get { return _Branch; }
+            set
+            {
+                if (value.Length > 0)
+                {
+                    _Branch = value;
+                }
+                else
+                {
+                    throw new ArgumentNullException("Branch can't be blank or null");
+                }
+            }
+        }
+
+        int _yearofgraduation;
+        public int YearOfGraduation
+        {
+            get { return _yearofgraduation; }
+            set
+            {
+                if (value > 0)
+
+                {
+                    throw new ArgumentNullException("YearOfGraduation cannot be null or zero");
+                }
+                else
+                {
+                    _yearofgraduation = value;
+                }
+            }
+        }
+
+        int _TotalCGPA;
+        public int TotalCGPA
+        {
+            get { return _TotalCGPA; }
+            set
+            {
+                if (value > 0)
+
+                {
+                    throw new ArgumentNullException("Total CGPA cannot be null or zero");
+                }
+                else
+                {
+                    _TotalCGPA = value;
+                }
+            }
+        }
+    }
+}

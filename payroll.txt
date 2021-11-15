@@ -1,0 +1,183 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace project
+{
+   public class Payroll
+    {
+        int _empid;
+        public int EmployeeId
+        {
+            get { return _empid; }
+            set
+            {
+                if (value <= 0)
+                {
+                    throw new ArgumentNullException("Employee id cannot be null or zero");
+                }
+                else
+                {
+                    _empid = value;
+                }
+            }
+        }
+
+        int _BankAccountNo;
+        public int BankAccountNo
+        {
+            get { return _BankAccountNo; }
+            set
+            {
+                if (value <= 0)
+                {
+                    throw new ArgumentNullException("BankAccountNo cannot be null or zero");
+                }
+                else
+                {
+                    _BankAccountNo = value;
+                }
+            }
+        }
+
+        int _ProvidentFundNo;
+        public int ProvidentFundNo
+        {
+            get { return _ProvidentFundNo; }
+            set
+            {
+                if (value <= 0)
+                {
+                    throw new ArgumentNullException("ProvidentFundNo cannot be null or zero");
+                }
+                else
+                {
+                    _ProvidentFundNo = value;
+                }
+            }
+        }
+
+        int _BasicPay;
+        public int BasicPay
+        {
+            get { return _BasicPay; }
+            set
+            {
+                if (value <= 0)
+                {
+                    throw new ArgumentNullException("BasicPay cannot be null or zero");
+                }
+                else
+                {
+                    _BasicPay = value;
+                }
+            }
+        }
+
+        int _HRA;
+        public int HouseRentAllowance
+        {
+            get { return _HRA; }
+            set
+            {
+                if (value <= 0)
+                {
+                    throw new ArgumentNullException("House Rent Allowance cannot be null or zero");
+                }
+                else
+                {
+                    _HRA = value;
+                }
+            }
+        }
+
+        int _MedicalAllowance;
+        public int MedicalAllowance
+        {
+            get { return _MedicalAllowance; }
+            set
+            {
+                if (value <= 0)
+                {
+                    throw new ArgumentNullException("MedicalAllowance cannot be null or zero");
+                }
+                else
+                {
+                    _MedicalAllowance = value;
+                }
+            }
+        }
+
+        int _Tax;
+        public int Tax
+        {
+            get { return _Tax; }
+            set
+            {
+                if (value <= 0)
+                {
+                    throw new ArgumentNullException("Tax cannot be null or zero");
+                }
+                else
+                {
+                    _Tax = value;
+                }
+            }
+        }
+
+
+        int _Bonus;
+        public int Bonus
+        {
+            get { return _Bonus; }
+            set
+            {
+                if (value <= 0)
+                {
+                    throw new ArgumentNullException("Bonus cannot be null or zero");
+                }
+                else
+                {
+                    _Bonus = value;
+                }
+            }
+        }
+
+        int _GrossPay;
+        public int GrossPay
+        {
+            get { return _GrossPay; }
+            set
+            {
+                if (value <= 0)
+                {
+                    throw new ArgumentNullException("GrossPay cannot be null or zero");
+                }
+                else
+                {
+                    _GrossPay = value;
+                }
+            }
+        }
+
+        int _NoOfWorkDays;
+        public int NoOfWorkDays
+        {
+            get { return _NoOfWorkDays; }
+            set
+            {
+                if (value <= 0)
+                {
+                    throw new ArgumentNullException("NoOfWorkDays cannot be null or zero");
+                }
+                else
+                {
+                    _NoOfWorkDays = value;
+                }
+            }
+        }
+    }
+}
+
